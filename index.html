@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indoor Hotel Map 3D Visualization</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Indoor Hotel Map</h1>
+  </header>
+  <main>
+    <div id="floor-navigation">
+      <button id="prev-floor" aria-label="Previous Floor">⬆️</button>
+      <span id="current-floor">Floor 1</span>
+      <button id="next-floor" aria-label="Next Floor">⬇️</button>
+    </div>
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Search rooms or services..." aria-label="Search rooms or services" />
+      <ul id="search-results" role="listbox"></ul>
+    </div>
+    <div id="threejs-container"></div>
+  </main>
+  <footer>
+    <p>© 2024 Indoor Hotel Map</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
