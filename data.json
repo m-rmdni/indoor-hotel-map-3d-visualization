@@ -1,0 +1,42 @@
+{
+  "buildings": [
+    {
+      "id": "building1",
+      "name": "Main Building",
+      "floors": [
+        {
+          "floorNumber": 1,
+          "rooms": [
+            {"id": "101", "name": "Room 101", "type": "room", "position": [1, 0, 1]},
+            {"id": "102", "name": "Room 102", "type": "room", "position": [3, 0, 1]}
+          ],
+          "services": [
+            {"id": "elevator1", "name": "Elevator", "type": "elevator", "position": [2, 0, 2]},
+            {"id": "restroom1", "name": "Restroom", "type": "restroom", "position": [4, 0, 1]}
+          ],
+          "connections": [
+            ["101", "elevator1"],
+            ["102", "elevator1"],
+            ["elevator1", "restroom1"]
+          ]
+        },
+        {
+          "floorNumber": 2,
+          "rooms": [
+            {"id": "201", "name": "Room 201", "type": "room", "position": [1, 0, 1]},
+            {"id": "202", "name": "Room 202", "type": "room", "position": [3, 0, 1]}
+          ],
+          "services": [
+            {"id": "elevator1", "name": "Elevator", "type": "elevator", "position": [2, 0, 2]},
+            {"id": "restaurant1", "name": "Restaurant", "type": "restaurant", "position": [4, 0, 1]}
+          ],
+          "connections": [
+            ["201", "elevator1"],
+            ["202", "elevator1"],
+            ["elevator1", "restaurant1"]
+          ]
+        }
+      ]
+    }
+  ]
+}
