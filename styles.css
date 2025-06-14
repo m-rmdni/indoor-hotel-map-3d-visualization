@@ -1,0 +1,124 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f1eb; /* beige */
+  color: #2c1a0f; /* dark brown */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #3e2f1c; /* dark brown */
+  color: #f5f1eb; /* beige */
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#floor-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  color: #3e2f1c;
+}
+
+#floor-navigation button {
+  background-color: #a67c52; /* brown */
+  border: none;
+  color: #f5f1eb;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#floor-navigation button:hover,
+#floor-navigation button:focus {
+  background-color: #8c6239;
+  outline: none;
+}
+
+#search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #a67c52;
+  border-radius: 4px;
+  color: #2c1a0f;
+}
+
+#search-input:focus {
+  border-color: #3e2f1c;
+  outline: none;
+}
+
+#search-results {
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #a67c52;
+  border-radius: 4px;
+  color: #2c1a0f;
+}
+
+#search-results li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #a67c52;
+}
+
+#search-results li:last-child {
+  border-bottom: none;
+}
+
+#search-results li:hover,
+#search-results li:focus {
+  background-color: #f0e6d2;
+  outline: none;
+}
+
+#threejs-container {
+  flex: 1;
+  min-height: 400px;
+  background-color: #000; /* black background for 3D canvas */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive mobile-first */
+@media (min-width: 600px) {
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
